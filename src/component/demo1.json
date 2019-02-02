@@ -1,0 +1,78 @@
+{
+    "result": [{
+        "reported": {
+            "interfaces": {
+                "ttyO5": {
+                    "status": "up",
+                    "terminals": 1,
+                    "property": {
+                        "conn_params": "9600-8-n-1"
+                    }
+                },
+                "LAN": {
+                    "status": "up",
+                    "property": {
+                        "conn_params": "100M/Full deplex",
+                        "state": [0, 1],
+                        "networks": ["192.168.2.12/24", "10.5.16.10/24"],
+                        "netmask": "255.255.255.0"
+                    }
+                },
+                "WLAN": {
+                    "status": "up",
+                    "terminals": 3,
+                    "property": {
+                        "conn_params": "2.4G/5G",
+                        "ip": "192.168.2.31",
+                        "netmask": "255.255.255.0",
+                        "ssid": ["inhand-sales", "inhand-sales-5g"],
+                        "state": [0, 3]
+                    }
+                },
+                "WAN": {
+                    "terminals": 1,
+                    "property": {
+                        "conn_params": "*99***1#",
+                        "apn": "cmnet",
+                        "ip": "211.168.2.31"
+                    }
+                },
+                "Bluetooth": {
+                    "status": "up",
+                    "terminals": 0,
+                    "property": {
+                        "conn_params": "",
+                        "working_mode": "slave",
+                        "state": [1]
+                    }
+                },
+                "OBD": {
+                    "status": "up",
+                    "terminals": 1,
+                    "property": {
+                        "conn_params": ""
+                    }
+                },
+                "DI": {
+                    "property": {
+                        "state": [0, 0, 0, 1]
+                    }
+                },
+                "DO": {
+                    "status": "down",
+                    "property": {
+                        "state": [0]
+                    }
+                },
+                "GNSS": {
+                    "status": "up",
+                    "terminals": 1,
+                    "property": {
+                        "state": [6]
+                    }
+                }
+            }
+        },
+        "id": "5c3ef45e5b1fac000188bcf3"
+    }]
+}
