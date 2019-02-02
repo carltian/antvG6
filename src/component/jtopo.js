@@ -4,38 +4,36 @@ import network from '../img/network.jpg';
 
 import LAN_up from '../img/LAN_up.png';
 import LAN_down from '../img/LAN_down.png';
-import LAN_no from '../img/LAN_no.png';
 
-import WAN_up from '../img/WAN_up.jpg';
-import WAN_down from '../img/WAN_down.jpg';
-// import WAN_no from '../img/WAN_no.png';
+
+import WAN_up from '../img/WAN_up.png';
+import WAN_down from '../img/WAN_down.png';
 
 import WLAN_up from '../img/WLAN_up.png';
 import WLAN_down from '../img/WLAN_down.png';
-import WLAN_no from '../img/WLAN_no.png';
+
 
 import Bluetooth_up from '../img/Bluetooth_up.png';
 import Bluetooth_down from '../img/Bluetooth_down.png';
-import Bluetooth_no from '../img/Bluetooth_no.png';
+
 
 import OBD_up from '../img/OBD_up.png';
 import OBD_down from '../img/OBD_down.png';
-import OBD_no from '../img/OBD_no.png';
+
 
 import IO_up from '../img/IO_up.png';
 import IO_down from '../img/IO_down.png';
-import IO_no from '../img/IO_no.png';
+
 
 import DIO_up from '../img/DIO_up.png';
 import DIO_down from '../img/DIO_down.png';
-import DIO_no from '../img/DIO_no.png';
+
 
 import GNSS_up from '../img/GNSS_up.png';
 import GNSS_down from '../img/GNSS_down.png';
-import GNSS_no from '../img/GNSS_no.png';
 
 import Equierment from '../img/shebei.png';
-import Equierment0 from '../img/shebei1.png';
+import Equierment0 from '../img/shebei2.png';
 
 
 
@@ -161,9 +159,9 @@ for(let i = 0;i < interfaces_keys.length;i++) {
     let value = select_Icon(key);
     images[key] = value;//LAN:"LAN_up"
     }
-console.log(images);
-const w = 50;
-const h = 40;
+
+const w = 40;
+const h = 30;
 const data = {
     roots: [{
       imag: network,
@@ -268,8 +266,8 @@ export default class Jtopo extends Component {
             group.addShape('text', {
                 attrs: {
                     ...scoreTextStyle,
-                    x: 25,
-                    y: 60,
+                    x: 18,
+                    y: 45,
                     text: model.name,
                 },
                 });
@@ -296,7 +294,7 @@ export default class Jtopo extends Component {
         },
         getVGap: function getVGap() /* d */ {
           // 竖向间距
-          return 10;
+          return 20;
         }
       });
       var tree = new G6.Tree({
